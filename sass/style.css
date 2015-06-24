@@ -1,0 +1,54 @@
+.container {
+  width: 1300px; }
+
+.navbar-header {
+  line-height: auto;
+  height: auto;
+  display: table;
+  width: 100%;
+  height: auto; }
+  .navbar-header a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 15px; }
+    .navbar-header a hover {
+      text-decoration: none; }
+
+.navbar-brand {
+  height: auto; }
+
+.phoneTopHeader {
+  background: url("../img/phone.png") no-repeat left 15px;
+  color: #fff;
+  font-family: "GothamPro";
+  font-size: 22px;
+  font-weight: bold;
+  padding-left: 25px;
+  line-height: 20px;
+  padding-left: 25px;
+  text-align: center;
+  padding-top: 10px;
+  display: inline; }
+  .phoneTopHeader small {
+    font-size: 10px; }
+
+.headerTopContacts {
+  float: right; }
+  .headerTopContacts .headerTopMenu {
+    display: inline-block;
+    color: #ffffff; }
+    .headerTopContacts .headerTopMenu li {
+      display: inline;
+      list-style: none;
+      color: #ffffff;
+      text-decoration: none;
+      color: #ffffff; }
+      .headerTopContacts .headerTopMenu li hover {
+        text-decoration: none; }
+  .headerTopContacts .headerTopSoc {
+    display: inline-block; }
+    .headerTopContacts .headerTopSoc li {
+      display: inline-block; }
+
+/*# sourceMappingURL=style.css.map */
