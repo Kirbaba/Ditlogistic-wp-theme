@@ -1,6 +1,10 @@
 .container {
   width: 1300px; }
 
+h1 {
+  font-family: "GothamPro";
+  font-weight: 300; }
+
 .navbar-header {
   line-height: auto;
   height: auto;
@@ -33,22 +37,66 @@
   .phoneTopHeader small {
     font-size: 10px; }
 
-.headerTopContacts {
-  float: right; }
-  .headerTopContacts .headerTopMenu {
-    display: inline-block;
+.headerTopMenuUl {
+  display: table-cell;
+  vertical-align: middle; }
+
+.headerTopMenu {
+  display: inline-block;
+  color: #ffffff; }
+  .headerTopMenu li {
+    display: inline;
+    list-style: none;
+    color: #ffffff;
+    text-decoration: none;
     color: #ffffff; }
-    .headerTopContacts .headerTopMenu li {
-      display: inline;
-      list-style: none;
-      color: #ffffff;
-      text-decoration: none;
-      color: #ffffff; }
-      .headerTopContacts .headerTopMenu li hover {
-        text-decoration: none; }
+    .headerTopMenu li hover {
+      text-decoration: none; }
+
+.headerTopContacts {
+  float: right;
+  padding: 40px 0 20px;
+  height: 120px;
+  display: table; }
   .headerTopContacts .headerTopSoc {
     display: inline-block; }
     .headerTopContacts .headerTopSoc li {
       display: inline-block; }
+
+.intro h1 {
+  color: #131313;
+  font-family: Calibri;
+  font-size: 57px;
+  text-align: left;
+  font-weight: 300; }
+  .intro h1 span {
+    background: rgba(255, 255, 255, 0.75);
+    font-family: Calibri;
+    padding: 0 20px; }
+    .intro h1 span .changed {
+      color: #00c2f0;
+      background: rgba(255, 255, 255, 0); }
+
+.proba {
+  height: 1000px; }
+
+.main_m {
+  border-top: 2px solid #ffffff;
+  padding-top: 10px;
+  margin-bottom: 0; }
+
+.intro {
+  position: relative; }
+  .intro .navigBot {
+    position: absolute;
+    z-index: 140;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    border-top: 2px solid #ffffff;
+    padding-top: 10px; }
+    .intro .navigBot .main_m {
+      margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */

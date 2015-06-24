@@ -1,6 +1,10 @@
 .container
   width: 1300px
 
+h1
+  font-family: "GothamPro"
+  font-weight: 300
+
 .navbar-header
   line-height: auto
   height: auto
@@ -34,23 +38,29 @@
   small
     font-size: 10px
 
+.headerTopMenuUl
+  display: table-cell
+  vertical-align: middle
 
+.headerTopMenu
+  display: inline-block
+  color: #ffffff
+  li
+    display: inline
+    list-style: none
+    color: #ffffff
+    a
+    text-decoration: none
+    color: #ffffff
+    hover
+      text-decoration: none
 
 .headerTopContacts
   float: right
+  padding: 40px 0 20px
+  height: 120px
+  display: table
 
-  .headerTopMenu
-    display: inline-block
-    color: #ffffff
-    li
-      display: inline
-      list-style: none
-      color: #ffffff
-      a
-      text-decoration: none
-      color: #ffffff
-      hover
-        text-decoration: none
   .headerTopSoc
     display: inline-block
     li
@@ -58,4 +68,38 @@
 
 
 
+.intro h1
+  color: #131313 // text color
+  font-family: Calibri
+  font-size: 57px
+  text-align: left
+  font-weight: 300
+  span
+    background: rgba(255,255,255,.75)
+    font-family: Calibri
+    padding: 0 20px
+    .changed
+      color: #00c2f0
+      background: rgba(255,255,255,0)
 
+.proba
+  height: 1000px
+
+.main_m
+  border-top: 2px solid #ffffff
+  padding-top: 10px
+  margin-bottom: 0
+
+.intro
+  position: relative
+  .navigBot
+    position: absolute
+    z-index: 140
+    bottom: 10px
+    left: 0
+    width: 100%
+    height: 50px
+    border-top: 2px solid #ffffff
+    padding-top: 10px
+    .main_m
+      margin: 0 auto

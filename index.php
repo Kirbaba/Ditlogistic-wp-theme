@@ -22,14 +22,17 @@
             </a>
             <div class="headerTopContacts">
                 <div class="phoneTopHeader">8-800-585-8998 <br/><small>(звонок по росси бесплатный)</small></div>
-                <ul class="headerTopMenu">
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Контакты</a><li>
-                </ul>
-                <ul class="headerTopSoc">
-                    <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/Layer-42.png" alt=""/></a></li>
-                    <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/Layer-44.png" alt=""/></a></li>
-                </ul>
+                <div class="headerTopMenuUl">
+
+                    <ul class="headerTopMenu">
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Контакты</a><li>
+                    </ul>
+                    <ul class="headerTopSoc">
+                        <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/Layer-42.png" alt=""/></a></li>
+                        <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/Layer-44.png" alt=""/></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
 
@@ -44,16 +47,51 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <h1 class="brand-heading">Grayscale</h1>
-                    <p class="intro-text">A free, responsive, one page Bootstrap theme.<br>Created by Start Bootstrap.</p>
-                    <a href="#about" class="btn btn-circle page-scroll">
-                        <i class="fa fa-angle-double-down animated"></i>
-                    </a>
+                    <h1><span>МЫ ПЕРЕВОЗИМ <span class="changed">ЯХТЫ</span></span></h1>
+                    <h1><span>И ЭКОНОМИМ ВАШИ <span class="changed">НЕРВЫ</span></span></h1>
                 </div>
+                <a href="#services">
+                    <div class="scroll-down">
+            <span>
+                <i><img src="<?php bloginfo('template_directory'); ?>/img/toBot.png" alt=""/></i>
+            </span>
+                    </div>
+                </a>
             </div>
+
+
+
+                   <!-- <nav class="navbar navbar-inverse navig navbar-fixed-top" role="navigation">
+                        <ul class="menu_m">
+                            <li><a href="#start" class="smoothScroll"> нас</a></li>
+                            <li><a href="#we" class="smoothScroll">наши услуги</a></li>
+                            <li><a href="#photorev" class="smoothScroll">отзывы</a></li>
+                            <li><a href="#progs" class="smoothScroll">расчет перевозки</a></li>
+                            <li><a href="#faq" class="smoothScroll">галерея</a></li>
+
+                        </ul>
+                    </nav>-->
+
+
         </div>
     </div>
+<div class="navigBot">
+  <!--  <nav class="navbar-custom" role="navigation">-->
+        <ul class="menu_m">
+            <li><a href="#start" class="smoothScroll"> нас</a></li>
+            <li><a href="#we" class="smoothScroll">наши услуги</a></li>
+            <li><a href="#photorev" class="smoothScroll">отзывы</a></li>
+            <li><a href="#progs" class="smoothScroll">расчет перевозки</a></li>
+            <li><a href="#faq" class="smoothScroll">галерея</a></li>
+
+        </ul>
+</div>
+  <!--  </nav>-->
 </header>
+
+
+
+<div class="proba"></div>
 
 <?php wp_footer(); ?>
 </body>

@@ -24,6 +24,36 @@ $(function() {
     });
 });
 
+$(window).scroll(function(){
+    var h = $('.navigBot').offset().top;
+    console.log(h);
+    var top = $(document).scrollTop();
+    console.log($(document).scrollTop());
+    if(h <= top + 120){
+        $('.navigBot').css({'position':'fixed','top':'120px','background':'#000'})
+    }
+    else{
+        $('.navigBot').css({'position':'absolute','bottom':'10px','background':'rgba(0,0,0,0)'})
+    }
+
+    /*if ($(document).scrollTop() > 120) {
+        if($(".height").is(':visible')){
+            $(".navigBot").css({height: "45px"});
+
+            $(".h").css({display: "block"});
+
+        }
+    }
+    if($(document).scrollTop() < 120){
+
+        $(".navigBot").css({height: "0px"});
+
+        $(".h").css({display: "none"});
+
+    }*/
+});
+
+
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
