@@ -17,8 +17,8 @@
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand page-scroll" href="#page-top">
-                <img src="<?php bloginfo('template_directory'); ?>/img/logo.png">
+            <a class="navbar-brand page-scroll logo" href="#page-top">
+                <i></i>
             </a>
             <div class="headerTopContacts">
                 <div class="phoneTopHeader">8-800-585-8998 <br/><small>(звонок по росси бесплатный)</small></div>
@@ -29,8 +29,8 @@
                         <li><a href="#">Контакты</a><li>
                     </ul>
                     <ul class="headerTopSoc">
-                        <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/Layer-42.png" alt=""/></a></li>
-                        <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/Layer-44.png" alt=""/></a></li>
+                        <li><a href="#"><i class="vk"></i></a></li>
+                        <li><a href="#"><i class="inst"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -49,6 +49,7 @@
                 <div class="col-md-8 col-md-offset-2">
                     <h1><span>МЫ ПЕРЕВОЗИМ <span class="changed">ЯХТЫ</span></span></h1>
                     <h1><span>И ЭКОНОМИМ ВАШИ <span class="changed">НЕРВЫ</span></span></h1>
+                    <a href="#" class="calcBut">Расчитать стоимость</a>
                 </div>
                 <a href="#services">
                     <div class="scroll-down">
@@ -75,7 +76,7 @@
 
         </div>
     </div>
-<div class="navigBot">
+<div class="navigBot  navbar-custom" data-type="absolute">
   <!--  <nav class="navbar-custom" role="navigation">-->
         <ul class="menu_m">
             <li><a href="#start" class="smoothScroll"> нас</a></li>

@@ -37,6 +37,7 @@ h1
   display: inline
   small
     font-size: 10px
+    padding-left: 18px
 
 .headerTopMenuUl
   display: table-cell
@@ -55,6 +56,8 @@ h1
     hover
       text-decoration: none
 
+
+
 .headerTopContacts
   float: right
   padding: 40px 0 20px
@@ -63,10 +66,62 @@ h1
 
   .headerTopSoc
     display: inline-block
+    margin-bottom: 0
+    vertical-align: middle
     li
       display: inline-block
+      a
+        i
+          width: 24px
+          height: 24px
+          padding: 24px 24px 0 0
+          display: inline-block
+
+        i.vk
+          background: url("../img/Layer-42.png") no-repeat
+        i.inst
+          background: url("../img/Layer-44.png") no-repeat
+
+.headerPageContacts
+  .phoneTopHeader
+    color: #000
+    background: url("../img/phone-1.png") no-repeat left 15px
+  .headerTopMenuUl
+    .headerTopMenu
+      color: #000000
+      li
+        color: #000000
+        a
+          color: #000000
+    .headerTopSoc
+      li
+        a
+          i.vk
+            background: url("../img/Layer-42-bl.png") no-repeat
+          i.inst
+            background: url("../img/Layer-44-bl.png") no-repeat
 
 
+.navbar-header-scroll
+  .logo
+    i
+      display: block
+      width:  229px
+      height: 90px
+      background: url("../img/logo-1.png")
+
+.main_mScrole
+  background: #ffffff
+  padding-top: 10px
+  padding-bottom: 10px
+  border-top: 2px solid #000
+  -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out
+  -moz-transition: background .5s ease-in-out,padding .5s ease-in-out
+  transition: background .5s ease-in-out,padding .5s ease-in-out
+  li
+    border-left: 1px solid #000000
+    a
+      color: #000000
 
 .intro h1
   color: #131313 // text color
@@ -84,7 +139,12 @@ h1
 
 .proba
   height: 1000px
+  background-color: #0d0
 
+.top-nav-collapse
+  background: #ffffff
+  padding: 0
+  
 .main_m
   border-top: 2px solid #ffffff
   padding-top: 10px
@@ -95,7 +155,7 @@ h1
   .navigBot
     position: absolute
     z-index: 140
-    bottom: 10px
+    bottom: 0
     left: 0
     width: 100%
     height: 50px
@@ -103,3 +163,27 @@ h1
     padding-top: 10px
     .main_m
       margin: 0 auto
+
+.logo
+  i
+    display: block
+    width:  229px
+    height: 90px
+    background: url("../img/logo.png")
+
+
+a.calcBut
+  display: inline-block
+  font-family: Calibri
+  font-size: 20px
+  font-weight: 500
+  line-height: 61px
+  width: 245px
+  height: 61px
+  text-transform: uppercase
+  color: #fff
+  text-decoration: none
+  margin-top: 80px
+  background-color: #00c1ef
+  hover
+    text-decoration: none

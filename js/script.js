@@ -8,8 +8,20 @@
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
+        $(".headerTopContacts").addClass("headerPageContacts");
+        $(".navbar-header").addClass("navbar-header-scroll");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        $(".headerTopContacts").removeClass("headerPageContacts");
+        $(".navbar-header").removeClass("navbar-header-scroll");
+    }
+});
+$(window).scroll(function() {
+
+    if (window.h < $(document).scrollTop() + 100) {
+        $(".menu_m").addClass("main_mScrole");
+    } else {
+        $(".menu_m").removeClass("main_mScrole");
     }
 });
 
@@ -25,18 +37,27 @@ $(function() {
 });
 
 $(window).scroll(function(){
-    var h = $('.navigBot').offset().top;
-    console.log(h);
+    //var h = $('.navigBot').offset().top;
     var top = $(document).scrollTop();
-    console.log($(document).scrollTop());
-    if(h <= top + 120){
-        $('.navigBot').css({'position':'fixed','top':'120px','background':'#000'})
+    //console.log($(document).scrollTop());
+    console.log("-------------");
+    if($('.navigBot').attr('data-type') == 'absolute'){
+        window.h = $('.navigBot').offset().top;
     }
-    else{
-        $('.navigBot').css({'position':'absolute','bottom':'10px','background':'rgba(0,0,0,0)'})
+    if($('.navigBot').attr('data-type') == 'fixed'){
+
+    }
+    console.log(h);
+    if(window.h < $(document).scrollTop() + 100){
+        $('.navigBot').attr('data-type','fixed');
+        $('.navigBot').css({'position':'fixed','top':'109px'/*,'background':'#fff'*/})
+    }
+    if(window.h > $(document).scrollTop() + 100){
+        //$('.navigBot').attr('data-type','absolute');
+        $('.navigBot').css({'position':'absolute','bottom':'10px','top':'initial','background':'rgba(0,0,0,0)'})
     }
 
-    /*if ($(document).scrollTop() > 120) {
+if ($(document).scrollTop() > 100) {
         if($(".height").is(':visible')){
             $(".navigBot").css({height: "45px"});
 
@@ -44,14 +65,17 @@ $(window).scroll(function(){
 
         }
     }
-    if($(document).scrollTop() < 120){
+    if($(document).scrollTop() < 100){
 
         $(".navigBot").css({height: "0px"});
 
         $(".h").css({display: "none"});
 
-    }*/
+    }
+
 });
+
+
 
 
 // Closes the Responsive Menu on Menu Item Click
