@@ -54,7 +54,7 @@
                 <a href="#services">
                     <div class="scroll-down">
             <span>
-                <i><img src="<?php bloginfo('template_directory'); ?>/img/toBot.png" alt=""/></i>
+                <i class="butArrow"><!--<img src="<?php /*bloginfo('template_directory'); */?>/img/toBot.png" alt=""/>--></i>
             </span>
                     </div>
                 </a>
@@ -90,9 +90,125 @@
   <!--  </nav>-->
 </header>
 
+<section class="Line2">
+    <div class="container">
+        <h1 class="blockTitle">Наши услуги</h1>
+        <div class="underH"></div>
+        <p>Мы перевозим разнообразную технику</p>
+        <div class="row">
+            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
+                <div class="servAuto">
+                    <h2>ПЕРЕВОЗКА СПЕЦТЕХНИКИ  И ТРАНСПОРТНЫХСРЕДСТВ</h2>
+                </div>
 
+            </div>
+            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
+                <div class="servJD">
+                    <h2>ПЕРЕВОЗКА СТАТИЧНЫХ ГРУЗОВ</h2>
+                </div>
 
-<div class="proba"></div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
+                <div class="servSea">
+                    <h2>ПЕРЕВОЗКА ГАБАРИТНЫХ ГРУЗОВ</h2>
+                </div>
+
+            </div>
+            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
+                <div class="servAvio">
+                    <h2>ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <a href="#" class="toGallery">Перейти в галерею</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="Line3">
+    <div class="container">
+        <h1 class="blockTitle">О нас</h1>
+        <div class="underH"></div>
+        <p>Это то, что мы делаем лучше всего</p>
+        <p>Мы профильно занимаемся перевозкой всевозможной спецтехники и транспортных средств, негабаритных и тяжеловесных грузов автомобильным, морским и железнодорожным транспортом. Для осуществления данных задач наша команда имеет богатый опыт, накопленный за годы работы. Длинный список наших постоянных контрагентов дает нам возможность строить для Вас наиболее эффективную и экономически выгодную логистику для того, чтобы минимизировать время, и как следствие, транспортные расходы. Офис нашей компании находится в Санкт-Петербурге, но мы работаем во всех направления и не ограничиваемся отдельно взятыми регионами.
+            Наш девиз - это индивидуальный тщательный подход к каждой новой поставленной задаче!
+        </p>
+        <div class="row">
+            <div class="infoGraf">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <img src="<?php bloginfo('template_directory'); ?>/img/circle_info.png" alt=""/>
+                    <p><b>Информация</b></p>
+                    <p>Заказывая у нас перевозку негабаритного груза, Вам ежедневно будет поступать информация по местоположению груза удобным для Вас способом.</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <img src="<?php bloginfo('template_directory'); ?>/img/circle_info1.png" alt=""/>
+                    <p><b>100% Гарантия</b></p>
+                    <p>Наша компания при доставке грузов учитывает все возможные (железнодорожные переезды, мосты, тоннели и т.д.) препятствия в пути следования по всему маршруту. Поэтому мы гарантируем доставку грузов точно в срок</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <img src="<?php bloginfo('template_directory'); ?>/img/access-time.png" alt=""/>
+                    <p><b>Решение любой проблемы</b></p>
+                    <p>Мы имеем богатый опыт для решения любых логистических задач</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <img src="<?php bloginfo('template_directory'); ?>/img/circle_info3.png" alt=""/>
+                    <p><b>Время подачи</b></p>
+                    <p>При крупногабаритной перевозке груза мы с Вами сразу прописываем дату подачи транспорта, учитывая сроки на оформление разрешения и любые форс-мажоры. В случае опоздания транспорта на погрузку, стоимость перевозки будет снижена.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="Line4">
+    <div class="container">
+        <div class="for-slider">
+            <div class="userIconCirc">
+                <img src="<?php bloginfo('template_directory'); ?>/img/Layer-27.png" alt=""/>
+            </div>
+            <h3>Клавдия Коршунова</h3>
+            <p>Исполнительный Директор ООО “Газпром”</p>
+
+            <div class="indexComent">
+                <p>
+                    Реализация в обществе - Сферы деятельности Клавдии разнообразны. Она очень дисциплинирована.
+                    Прежде всего это хранительница домашнего очага и чудесная мать семейства.
+                    Может часто менять места работы и трудиться медсестрой, санитаркой, педиатром, стюардессой.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="Line5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <h1 class="blockTitle">Контакты</h1>
+                <div class="underH"></div>
+                <div class="contactInfo">
+                    <div class="contactCity"><span>город САНКТ-ПЕТЕРБУРГ</span></div>
+                    <div class="contactStreet"><span>Невский проспект, дом 50</span></div>
+                    <div class="contactPhone"><span>8 800 545 65 56</span></div>
+                    <div class="contactMail"><span>help@<a href="http://ditlogistic.ru">ditlogistic.ru</a></span></div>
+
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <h1 class="blockTitle">Расчет перевозки</h1>
+                <div class="underH"></div>
+                <p>Заполните форму сейчас и мы Вам ответим в течение 2 часов</p>
+                <div class="calcContactForm">
+                    <?php echo do_shortcode("[contact-form-7 id='123' title='calcForm']") ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <?php wp_footer(); ?>
 </body>

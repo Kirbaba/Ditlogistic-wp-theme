@@ -1,8 +1,13 @@
+body {
+  font-family: Calibri; }
+
+html, body {
+  min-width: 1300px; }
+
 .container {
   width: 1300px; }
 
 h1 {
-  font-family: "GothamPro";
   font-weight: 300; }
 
 .navbar-header {
@@ -16,8 +21,8 @@ h1 {
     color: #ffffff;
     font-weight: bold;
     margin-right: 15px; }
-    .navbar-header a hover {
-      text-decoration: none; }
+  .navbar-header a:hover {
+    text-decoration: none; }
 
 .navbar-brand {
   height: auto; }
@@ -25,7 +30,6 @@ h1 {
 .phoneTopHeader {
   background: url("../img/phone.png") no-repeat left 15px;
   color: #fff;
-  font-family: "GothamPro";
   font-size: 22px;
   font-weight: bold;
   padding-left: 25px;
@@ -51,8 +55,9 @@ h1 {
     color: #ffffff;
     text-decoration: none;
     color: #ffffff; }
-    .headerTopMenu li hover {
-      text-decoration: none; }
+    .headerTopMenu li a:hover {
+      text-decoration: none;
+      color: #42b9e0; }
 
 .headerTopContacts {
   float: right;
@@ -122,10 +127,6 @@ h1 {
       color: #00c2f0;
       background: rgba(255, 255, 255, 0); }
 
-.proba {
-  height: 1000px;
-  background-color: #0d0; }
-
 .top-nav-collapse {
   background: #ffffff;
   padding: 0; }
@@ -168,7 +169,263 @@ a.calcBut {
   text-decoration: none;
   margin-top: 80px;
   background-color: #00c1ef; }
-  a.calcBut hover {
-    text-decoration: none; }
+
+.calcBut:hover {
+  text-decoration: none;
+  background-color: #2da0c6; }
+
+.calcBut:active {
+  color: #abd8e7;
+  background-color: #2da0c6; }
+
+.butArrow {
+  display: block;
+  width: 27px;
+  height: 13px;
+  background-image: url("../img/toBot.png"); }
+
+.butArrow:hover {
+  background-image: url("../img/Hover.png"); }
+
+.butArrow:active {
+  background-image: url("../img/toBotAc.png"); }
+
+.menu_m li a:hover, .menu_m li a:active {
+  color: #abd8e7; }
+
+.underH {
+  height: 2px;
+  width: 90px;
+  margin: 35px;
+  background-color: #393b41;
+  margin: 35px auto; }
+
+.Line2 {
+  padding: 50px 0;
+  color: #393b41; }
+  .Line2 p {
+    text-align: center;
+    font-size: 20px; }
+
+.blockTitle {
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #393b41; }
+
+.servAuto {
+  background: url("../img/auto1.png") no-repeat;
+  height: 316px;
+  width: 523px;
+  margin: 20px auto;
+  display: table;
+  padding: 0 8%; }
+  .servAuto h2 {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff; }
+
+.servJD {
+  background: url("../img/auto2.png") no-repeat;
+  height: 316px;
+  width: 523px;
+  margin: 20px auto;
+  display: table;
+  padding: 0 8%; }
+  .servJD h2 {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff; }
+
+.servSea {
+  background: url("../img/auto3.png") no-repeat;
+  height: 316px;
+  width: 523px;
+  margin: 20px auto;
+  display: table;
+  padding: 0 8%; }
+  .servSea h2 {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff; }
+
+.servAvio {
+  background: url("../img/auto4.png") no-repeat;
+  height: 316px;
+  width: 523px;
+  margin: 20px auto;
+  display: table;
+  padding: 0 2%; }
+  .servAvio h2 {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff; }
+
+.toGallery {
+  display: block;
+  margin: 30px auto;
+  width: 189px;
+  height: 57px;
+  border-radius: 28px 28px 29px 29px;
+  background-clip: padding-box;
+  background-color: #4dc1ef;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  padding: 20px; }
+
+.toGallery:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #2da0c6; }
+
+.toGallery:active {
+  text-decoration: none;
+  color: #abd8e7;
+  background-color: #2da0c6; }
+
+.Line3 {
+  padding: 20px 0;
+  background-color: #f7f7f7; }
+  .Line3 p {
+    color: #393b41;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 40px; }
+  .Line3 img {
+    margin: 15px auto;
+    display: block; }
+
+.infoGraf p {
+  text-align: center;
+  font-size: 16px;
+  color: #3a3c42;
+  margin-bottom: 0; }
+  .infoGraf p b {
+    font-size: 24px; }
+
+.Line4 {
+  background: url(../img/Layer-57.jpg) no-repeat top center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+  color: #f7f7f7; }
+  .Line4 h3 {
+    font-size: 30px; }
+  .Line4 p {
+    font-size: 16px; }
+  .Line4 h4 {
+    font-size: 18px; }
+
+.indexComent {
+  display: block;
+  text-align: center;
+  color: #f7f7f7;
+  width: 55%;
+  margin: 25px auto; }
+  .indexComent p {
+    font-size: 18px; }
+
+.userIconCirc {
+  background: url("../img/copy.png") no-repeat center center;
+  width: 40%;
+  margin: 0 auto;
+  display: block; }
+  .userIconCirc img {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    display: block; }
+
+.Line5 {
+  padding: 20px 0 50px; }
+  .Line5 p {
+    color: #393b41;
+    font-size: 20px;
+    text-align: center; }
+
+.contactInfo {
+  width: 60%;
+  margin: 25px auto;
+  display: block; }
+  .contactInfo span {
+    color: #393b41;
+    font-size: 18px;
+    border-left: 1px solid #393b41;
+    padding: 2px 0 2px 20px; }
+  .contactInfo .contactCity {
+    background: url("../img/1434662297_icon-person.png") 0% 50% no-repeat;
+    padding-left: 40px;
+    margin: 25px 0; }
+  .contactInfo .contactStreet {
+    background: url("../img/locat.png") 5px 50% no-repeat;
+    padding-left: 40px;
+    margin: 25px 0; }
+  .contactInfo .contactPhone {
+    background: url("../img/phoneContact.png") 0 50% no-repeat;
+    padding-left: 40px;
+    margin: 25px 0; }
+  .contactInfo .contactMail {
+    background: url("../img/mail.png") 0 50% no-repeat;
+    padding-left: 40px;
+    margin: 25px 0; }
+
+.calcInput {
+  width: 70%;
+  float: left;
+  border: 2px solid #ececec;
+  border-radius: 5px;
+  background-clip: padding-box;
+  background-color: #fff;
+  margin: 10px 0;
+  font-size: 16px;
+  padding: 10px; }
+
+.calcSubmit {
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 28px 28px 29px 29px;
+  background-clip: padding-box;
+  background-color: #4dc1ef;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+  outline: none;
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+  border: none; }
+
+.calcContactForm {
+  width: 85%;
+  margin: 0 auto; }
+
+div.wpcf7-validation-errors {
+  border: none;
+  color: #000000; }
 
 /*# sourceMappingURL=style.css.map */
