@@ -77,8 +77,14 @@ h1 {
         display: inline-block; }
       .headerTopContacts .headerTopSoc li a i.vk {
         background: url("../img/Layer-42.png") no-repeat; }
+      .headerTopContacts .headerTopSoc li a i.vk:hover {
+        background: url("../img/vkHover.png") no-repeat;
+        background-size: cover; }
       .headerTopContacts .headerTopSoc li a i.inst {
         background: url("../img/Layer-44.png") no-repeat; }
+      .headerTopContacts .headerTopSoc li a i.inst:hover {
+        background: url("../img/instaHover.png") no-repeat;
+        background-size: cover; }
 
 .headerPageContacts .phoneTopHeader {
   color: #000;
@@ -89,10 +95,18 @@ h1 {
     color: #000000; }
     .headerPageContacts .headerTopMenuUl .headerTopMenu li a {
       color: #000000; }
+    .headerPageContacts .headerTopMenuUl .headerTopMenu li a:hover {
+      color: #abd8e7; }
 .headerPageContacts .headerTopMenuUl .headerTopSoc li a i.vk {
   background: url("../img/Layer-42-bl.png") no-repeat; }
+.headerPageContacts .headerTopMenuUl .headerTopSoc li a i.vk:hover {
+  background: url("../img/vkHover.png") no-repeat;
+  background-size: cover; }
 .headerPageContacts .headerTopMenuUl .headerTopSoc li a i.inst {
   background: url("../img/Layer-44-bl.png") no-repeat; }
+.headerPageContacts .headerTopMenuUl .headerTopSoc li a i.inst:hover {
+  background: url("../img/instaHover.png") no-repeat;
+  background-size: cover; }
 
 .navbar-header-scroll .logo i {
   display: block;
@@ -144,6 +158,7 @@ h1 {
     bottom: 0;
     left: 0;
     width: 100%;
+    min-width: 1300px;
     height: 50px;
     border-top: 2px solid #ffffff;
     padding-top: 10px; }
@@ -427,5 +442,80 @@ a.calcBut {
 div.wpcf7-validation-errors {
   border: none;
   color: #000000; }
+
+.Line6 {
+  height: 624px; }
+
+footer {
+  background-color: #323844;
+  height: 224px;
+  padding: 50px 0;
+  display: block; }
+  footer .footMenu {
+    display: inline-table;
+    list-style: none;
+    vertical-align: top;
+    margin: 15px 0 0 30px; }
+    footer .footMenu li {
+      margin: 15px 0; }
+      footer .footMenu li a {
+        color: #ffffff;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold; }
+      footer .footMenu li a:hover {
+        color: #41b8df; }
+
+.footLogo {
+  background-image: url(../img/DITLOGISTIC.png);
+  width: 209px;
+  height: 80px;
+  display: inline-block; }
+
+.footSoc {
+  display: inline-table;
+  color: #fff;
+  list-style: none;
+  vertical-align: top;
+  margin: 15px 0 0 30px; }
+  .footSoc li {
+    display: inline-block; }
+    .footSoc li a i {
+      width: 24px;
+      height: 24px;
+      padding: 24px 24px 0 0;
+      display: inline-block;
+      margin-right: 15px; }
+    .footSoc li a i.vk {
+      background: url("../img/Layer-42.png") no-repeat; }
+    .footSoc li a i.vk:hover {
+      background: url("../img/vkHover.png") no-repeat;
+      background-size: cover; }
+    .footSoc li a i.inst {
+      background: url("../img/Layer-44.png") no-repeat; }
+    .footSoc li a i.inst:hover {
+      background: url("../img/instaHover.png") no-repeat;
+      background-size: cover; }
+  .footSoc p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 15px 0;
+    text-transform: uppercase; }
+  .footSoc a {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: underline; }
+  .footSoc a:hover {
+    color: #41b8df; }
+
+#serv {
+  position: absolute;
+  top: 85%; }
+
+a#cont {
+  position: relative;
+  top: -150px !important; }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <meta name="description" content="">
     <link rel="icon" href="/wp-content/uploads/2015/03/657068.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="/wp-content/uploads/2015/03/657068.ico" type="image/x-icon" />
@@ -26,7 +26,7 @@
 
                     <ul class="headerTopMenu">
                         <li><a href="#">Новости</a></li>
-                        <li><a href="#">Контакты</a><li>
+                        <li><a href="#cont" class="smoothScroll">Контакты</a><li>
                     </ul>
                     <ul class="headerTopSoc">
                         <li><a href="#"><i class="vk"></i></a></li>
@@ -51,47 +51,40 @@
                     <h1><span>И ЭКОНОМИМ ВАШИ <span class="changed">НЕРВЫ</span></span></h1>
                     <a href="#" class="calcBut">Расчитать стоимость</a>
                 </div>
-                <a href="#services">
+                <a href="#whatWeDo" class="smoothScroll">
                     <div class="scroll-down">
             <span>
                 <i class="butArrow"><!--<img src="<?php /*bloginfo('template_directory'); */?>/img/toBot.png" alt=""/>--></i>
             </span>
                     </div>
                 </a>
+
             </div>
-
-
-
-                   <!-- <nav class="navbar navbar-inverse navig navbar-fixed-top" role="navigation">
-                        <ul class="menu_m">
-                            <li><a href="#start" class="smoothScroll"> нас</a></li>
-                            <li><a href="#we" class="smoothScroll">наши услуги</a></li>
-                            <li><a href="#photorev" class="smoothScroll">отзывы</a></li>
-                            <li><a href="#progs" class="smoothScroll">расчет перевозки</a></li>
-                            <li><a href="#faq" class="smoothScroll">галерея</a></li>
-
-                        </ul>
-                    </nav>-->
 
 
         </div>
     </div>
+
 <div class="navigBot  navbar-custom" data-type="absolute">
   <!--  <nav class="navbar-custom" role="navigation">-->
+
         <ul class="menu_m">
-            <li><a href="#start" class="smoothScroll"> нас</a></li>
-            <li><a href="#we" class="smoothScroll">наши услуги</a></li>
+            <li><a href="#we" class="smoothScroll">О нас</a></li>
+            <li><a href="#serv" class="smoothScroll">наши услуги</a></li>
             <li><a href="#photorev" class="smoothScroll">отзывы</a></li>
             <li><a href="#progs" class="smoothScroll">расчет перевозки</a></li>
             <li><a href="#faq" class="smoothScroll">галерея</a></li>
 
         </ul>
+
 </div>
   <!--  </nav>-->
 </header>
-
+<a name="serv" id="serv"></a>
 <section class="Line2">
+
     <div class="container">
+
         <h1 class="blockTitle">Наши услуги</h1>
         <div class="underH"></div>
         <p>Мы перевозим разнообразную технику</p>
@@ -119,17 +112,19 @@
                     <h2>ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</h2>
                 </div>
             </div>
-        </div>
+        </div><a name="we" id="we"></a>
         <div class="row">
-            <a href="#" class="toGallery">Перейти в галерею</a>
+            <a href="#whatWeDo" class="toGallery">Перейти в галерею</a>
         </div>
 
     </div>
 </section>
 
 <section class="Line3">
+    <a name="whatWeDo" id="whatWeDo"></a>
     <div class="container">
         <h1 class="blockTitle">О нас</h1>
+
         <div class="underH"></div>
         <p>Это то, что мы делаем лучше всего</p>
         <p>Мы профильно занимаемся перевозкой всевозможной спецтехники и транспортных средств, негабаритных и тяжеловесных грузов автомобильным, морским и железнодорожным транспортом. Для осуществления данных задач наша команда имеет богатый опыт, накопленный за годы работы. Длинный список наших постоянных контрагентов дает нам возможность строить для Вас наиболее эффективную и экономически выгодную логистику для того, чтобы минимизировать время, и как следствие, транспортные расходы. Офис нашей компании находится в Санкт-Петербурге, но мы работаем во всех направления и не ограничиваемся отдельно взятыми регионами.
@@ -184,6 +179,7 @@
 </section>
 
 <section class="Line5">
+    <a name="cont" id="cont"></a>
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
@@ -208,6 +204,41 @@
         </div>
     </div>
 </section>
+
+<section class="Line6">
+    <div id="map_canvas" style="width:100%; height:100%"></div>
+</section>
+
+<footer>
+    <div class="container">
+
+        <a href="#"><i class="footLogo"></i></a>
+
+        <ul class="footMenu">
+            <li><a href="#we" class="smoothScroll">О нас</a></li>
+            <li><a href="#serv" class="smoothScroll">наши услуги</a></li>
+            <li><a href="#faq" class="smoothScroll">галерея</a></li>
+        </ul>
+        <ul class="footMenu">
+            <li><a href="#faq" class="smoothScroll">Расчет перевозки</a></li>
+            <li><a href="#photorev" class="smoothScroll">отзывы</a></li>
+            <li><a href="#progs" class="smoothScroll">новости</a></li>
+        </ul>
+        <ul class="footMenu">
+            <li><a href="#cont" class="smoothScroll">Контакты</a></li>
+        </ul>
+        <ul class="footSoc">
+            <p>Мы в соц. сетях</p>
+            <li><a href="#"><i class="vk"></i></a></li>
+            <li><a href="#"><i class="inst"></i></a></li>
+        </ul>
+        <ul class="footSoc">
+            <p>о всем вопросам:</p>
+            <a href="mailto:help@starlogistic.ru">help@starlogistic.ru</a>
+        </ul>
+
+    </div>
+</footer>
 
 
 <?php wp_footer(); ?>
