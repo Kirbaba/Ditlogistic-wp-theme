@@ -72,7 +72,7 @@
             <li><a href="#we" class="smoothScroll">О нас</a></li>
             <li><a href="#serv" class="smoothScroll">наши услуги</a></li>
             <li><a href="#photorev" class="smoothScroll">отзывы</a></li>
-            <li><a href="#progs" class="smoothScroll">расчет перевозки</a></li>
+            <li><a data-toggle="modal" href="#callme">расчет перевозки</a></li>
             <li><a href="#faq" class="smoothScroll">галерея</a></li>
 
         </ul>
@@ -243,6 +243,22 @@
     </div>
 </footer>
 
+<div class="modal fade" id="callme" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><!--&times;--></button>
+            <h1>РАСЧЕТ СТОИМОСТИ  ПЕРЕВОЗКИ</h1>
+            <div class="underH"></div>
+            <h3>Пожалуйста, заполните данную форму и наши сотрудники свяжется с вами</h3>
+            <?php echo do_shortcode("[contact-form-7 id='124' title='calcPopupForm']"); ?>
+        </div>
+        <!--<div class="modal-content">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 call_content">
+
+            </div>
+        </div>-->
+    </div>
+</div>
 
 <?php wp_footer(); ?>
 </body>

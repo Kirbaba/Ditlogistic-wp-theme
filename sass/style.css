@@ -518,4 +518,37 @@ a#cont {
   position: relative;
   top: -150px !important; }
 
+.modal-dialog {
+  background-color: #fff;
+  border-radius: 15px;
+  text-align: center;
+  color: #374157;
+  width: 500px; }
+  .modal-dialog h1 {
+    font-size: 30px;
+    text-transform: uppercase; }
+
+.modal-header {
+  border-bottom: 0;
+  padding: 25px; }
+  .modal-header .close {
+    background-image: url("../img/Close.png");
+    width: 50px;
+    height: 50px;
+    margin: -40px -35px 0 0;
+    opacity: 1;
+    outline: none; }
+
+.formPopup {
+  width: 100%;
+  border-radius: 22px;
+  height: 44px;
+  border: 0;
+  background: #f5f5f5;
+  background-clip: padding-box;
+  font-size: 18px;
+  color: #adadad;
+  padding: 20px 15px;
+  margin: 15px 0; }
+
 /*# sourceMappingURL=style.css.map */
