@@ -108,6 +108,8 @@ function loadScript() {
     document.body.appendChild(script);
 }
 
+<<<<<<< HEAD
+=======
 window.onload = loadScript;
 
 $(function() {
@@ -134,3 +136,4 @@ $(function() {
     });
 
 });
+>>>>>>> origin/master
