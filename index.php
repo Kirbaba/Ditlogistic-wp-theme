@@ -49,7 +49,7 @@
                 <div class="col-md-8 col-md-offset-2">
                     <h1><span>МЫ ПЕРЕВОЗИМ <span class="changed">ЯХТЫ</span></span></h1>
                     <h1><span>И ЭКОНОМИМ ВАШИ <span class="changed">НЕРВЫ</span></span></h1>
-                    <a href="#" class="calcBut">Расчитать стоимость</a>
+                    <a data-toggle="modal" href="#callme" class="calcBut">Расчитать стоимость</a>
                 </div>
                 <a href="#whatWeDo" class="smoothScroll">
                     <div class="scroll-down">
@@ -91,25 +91,25 @@
         <div class="row">
             <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
                 <div class="servAuto">
-                    <h2>ПЕРЕВОЗКА СПЕЦТЕХНИКИ  И ТРАНСПОРТНЫХСРЕДСТВ</h2>
+                    <a href="#"><h2>ПЕРЕВОЗКА СПЕЦТЕХНИКИ  И ТРАНСПОРТНЫХСРЕДСТВ</h2></a>
                 </div>
 
             </div>
             <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
                 <div class="servJD">
-                    <h2>ПЕРЕВОЗКА СТАТИЧНЫХ ГРУЗОВ</h2>
+                    <a href="#"><h2>ПЕРЕВОЗКА СТАТИЧНЫХ ГРУЗОВ</h2></a>
                 </div>
 
             </div>
             <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
                 <div class="servSea">
-                    <h2>ПЕРЕВОЗКА ГАБАРИТНЫХ ГРУЗОВ</h2>
+                    <a href="#"><h2>ПЕРЕВОЗКА ГАБАРИТНЫХ ГРУЗОВ</h2></a>
                 </div>
 
             </div>
             <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
                 <div class="servAvio">
-                    <h2>ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</h2>
+                    <a href="#"><h2>ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</h2></a>
                 </div>
             </div>
         </div><a name="we" id="we"></a>
@@ -202,6 +202,7 @@
                 <p>Заполните форму сейчас и мы Вам ответим в течение 2 часов</p>
                 <div class="calcContactForm">
                     <?php echo do_shortcode("[contact-form-7 id='123' title='calcForm']") ?>
+                    <a data-toggle="modal" href="#callme" class="calcSubmit">Оставить заявку</a>
                 </div>
             </div>
         </div>
@@ -223,7 +224,7 @@
             <li><a href="#faq" class="smoothScroll">галерея</a></li>
         </ul>
         <ul class="footMenu">
-            <li><a href="#faq" class="smoothScroll">Расчет перевозки</a></li>
+            <li><a data-toggle="modal" href="#callme">Расчет перевозки</a></li>
             <li><a href="#photorev" class="smoothScroll">отзывы</a></li>
             <li><a href="#progs" class="smoothScroll">новости</a></li>
         </ul>
@@ -249,7 +250,7 @@
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><!--&times;--></button>
             <h1>РАСЧЕТ СТОИМОСТИ  ПЕРЕВОЗКИ</h1>
             <div class="underH"></div>
-            <h3>Пожалуйста, заполните данную форму и наши сотрудники свяжется с вами</h3>
+            <p>Заполните форму и мы перезвоним Вам</p>
             <?php echo do_shortcode("[contact-form-7 id='124' title='calcPopupForm']"); ?>
         </div>
         <!--<div class="modal-content">

@@ -188,6 +188,7 @@ html {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
+    outline: none;
 }
 .menu_m{
     overflow: hidden;

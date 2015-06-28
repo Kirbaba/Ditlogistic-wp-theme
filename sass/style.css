@@ -125,7 +125,8 @@ h1 {
   .main_mScrole li {
     border-left: 1px solid #000000; }
     .main_mScrole li a {
-      color: #000000; }
+      color: #000000;
+      outline: none; }
 
 .intro h1 {
   color: #131313;
@@ -235,13 +236,17 @@ a.calcBut {
   margin: 20px auto;
   display: table;
   padding: 0 8%; }
-  .servAuto h2 {
+  .servAuto a {
+    text-decoration: none;
     display: table-cell;
-    vertical-align: middle;
-    font-size: 36px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff; }
+    vertical-align: middle; }
+    .servAuto a h2 {
+      font-size: 36px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff; }
+    .servAuto a h2:hover {
+      color: #42b9e0; }
 
 .servJD {
   background: url("../img/auto2.png") no-repeat;
@@ -250,13 +255,17 @@ a.calcBut {
   margin: 20px auto;
   display: table;
   padding: 0 8%; }
-  .servJD h2 {
+  .servJD a {
+    text-decoration: none;
     display: table-cell;
-    vertical-align: middle;
-    font-size: 36px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff; }
+    vertical-align: middle; }
+    .servJD a h2 {
+      font-size: 36px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff; }
+    .servJD a h2:hover {
+      color: #42b9e0; }
 
 .servSea {
   background: url("../img/auto3.png") no-repeat;
@@ -265,13 +274,17 @@ a.calcBut {
   margin: 20px auto;
   display: table;
   padding: 0 8%; }
-  .servSea h2 {
+  .servSea a {
+    text-decoration: none;
     display: table-cell;
-    vertical-align: middle;
-    font-size: 36px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff; }
+    vertical-align: middle; }
+    .servSea a h2 {
+      font-size: 36px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff; }
+    .servSea a h2:hover {
+      color: #42b9e0; }
 
 .servAvio {
   background: url("../img/auto4.png") no-repeat;
@@ -280,13 +293,17 @@ a.calcBut {
   margin: 20px auto;
   display: table;
   padding: 0 2%; }
-  .servAvio h2 {
+  .servAvio a {
+    text-decoration: none;
     display: table-cell;
-    vertical-align: middle;
-    font-size: 36px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff; }
+    vertical-align: middle; }
+    .servAvio a h2 {
+      font-size: 36px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff; }
+    .servAvio a h2:hover {
+      color: #42b9e0; }
 
 .toGallery {
   display: block;
@@ -433,7 +450,19 @@ a.calcBut {
   position: absolute;
   bottom: 0;
   right: 40px;
-  border: none; }
+  border: none;
+  text-decoration: none;
+  outline: none; }
+
+.calcSubmit:hover {
+  text-decoration: none;
+  outline: none;
+  color: #fff; }
+
+.calcSubmit:focus {
+  text-decoration: none;
+  outline: none;
+  color: #fff; }
 
 .calcContactForm {
   width: 85%;
@@ -523,7 +552,8 @@ a#cont {
   border-radius: 15px;
   text-align: center;
   color: #374157;
-  width: 500px; }
+  width: 500px;
+  padding: 15px 70px; }
   .modal-dialog h1 {
     font-size: 30px;
     text-transform: uppercase; }
@@ -535,9 +565,14 @@ a#cont {
     background-image: url("../img/Close.png");
     width: 50px;
     height: 50px;
-    margin: -40px -35px 0 0;
+    margin: -60px -110px 0 0;
     opacity: 1;
     outline: none; }
+  .modal-header .close:hover {
+    background-image: url("../img/Close_hover.png"); }
+  .modal-header p {
+    font-size: 14px;
+    color: #374157; }
 
 .formPopup {
   width: 100%;
