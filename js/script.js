@@ -40,14 +40,14 @@ $(window).scroll(function(){
     //var h = $('.navigBot').offset().top;
     var top = $(document).scrollTop();
     //console.log($(document).scrollTop());
-    console.log("-------------");
+    //console.log("-------------");
     if($('.navigBot').attr('data-type') == 'absolute'){
         window.h = $('.navigBot').offset().top;
     }
     if($('.navigBot').attr('data-type') == 'fixed'){
 
     }
-    console.log(h);
+   // console.log(h);
     if(window.h < $(document).scrollTop() + 100){
         $('.navigBot').attr('data-type','fixed');
         $('.navigBot').css({'position':'fixed','top':'108px'/*,'background':'#fff'*/})
@@ -74,9 +74,6 @@ if ($(document).scrollTop() > 100) {
     }
 
 });
-
-
-
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
