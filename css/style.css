@@ -212,6 +212,12 @@ nav.navbar.navbar-inverse.navig {
     border: none;
 }
 
+.banner { position: relative; overflow: auto; }
+    .banner li { list-style: none; }
+        .banner ul li { float: left; }
 
-
-
+.slider-item{
+    display:inline-block;
+    width: 30%;
+    vertical-align: top;
+}

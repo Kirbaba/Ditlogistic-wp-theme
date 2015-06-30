@@ -17,10 +17,12 @@ function add_script(){
     // wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-2.1.3.min.js', array(), '1');
     // wp_enqueue_script( 'jq', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js', array(), '1');
     wp_enqueue_script( 'jq', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', array(), '1');
-   
     wp_enqueue_script( 'my-bootstrap-extension', get_template_directory_uri() . '/js/bootstrap.js', array(), '1');
     wp_enqueue_script( 'my-script', get_template_directory_uri() . '/js/script.js', array(), '1');
     wp_enqueue_script( 'fotorama-js', get_template_directory_uri() . '/js/fotorama.js', array(), '1');
+     wp_enqueue_script( 'unslider-js', '//unslider.com/unslider.min.js', array(), '1');
+
+    
 }
 
 add_action( 'wp_enqueue_scripts', 'add_style' );
@@ -35,7 +37,8 @@ function prn($content) {
 add_action('admin_menu', 'admin_menu');
 
 function admin_menu(){
-    add_menu_page( 'Настройки слайдера', 'Отзывы клиентов', 'manage_options', 'text', 'admin_text' );
+    add_menu_page( 'Настройки слайдера', 'Слайдер на главной', 'manage_options', 'text', 'admin_text' );
+    add_menu_page( 'Отзывы', 'Отзывы клиентов', 'manage_options', 'reviews', 'admin_review' );
 }
 
 // load script to admin
@@ -99,13 +102,12 @@ function text_slides_sc(){
     $texts = $wpdb->get_results("SELECT * FROM text_reviews");
 
     foreach ($texts as $text) {
-        $generate .= "<div><div class='userIconCirc'>";
-        $generate .= "<img src='$text->photo_url'></div>
+        $generate .= "<li>";
+        $generate .= "<div class='userIconCirc'><img src='$text->photo_url'></div>
         <h3>$text->name</h3>
         <p>$text->prof</p>
-        <div class='indexComent'>
-        <p>$text->review</p>";
-        $generate .= "</div></div>";
+        <div class='indexComent'><p>$text->review</p></div>";
+        $generate .= "</li>";
     }
     return $generate;
 }
@@ -132,6 +134,89 @@ function my_pagenavi() {
 
 
 add_shortcode('text', 'text_slides_sc');
+
+function admin_review(){
+    global $wpdb;
+
+    if (function_exists('wp_enqueue_media')) {
+    wp_enqueue_media();
+    } else {
+        wp_enqueue_style('thickbox');
+        wp_enqueue_script('media-upload');
+        wp_enqueue_script('thickbox');
+    }
+
+    if(isset($_GET['del'])){
+        $wpdb->delete('reviews',array("id" => $_GET['del']));
+        $message = "Отзыв успешно удален!";
+    }
+
+    if(isset($_POST['attachment_url'])){
+
+        $wpdb->insert('reviews', array("photo_url" => $_POST['attachment_url'],
+            "name" => $_POST['name'],"prof" => $_POST['prof'], "review" => $_POST['review']));
+        $message = "Отзыв успешно добавлен!";
+        echo mysql_error();
+    }
+    
+    $generate = '';
+
+    $texts = $wpdb->get_results("SELECT * FROM reviews");
+    foreach ($texts as $text) {
+        $generate .= "<tr>
+            <td><img src='". $text->photo_url. "' alt='' style='width: 50px;'/></td>
+            <td>".$text->name."</td>
+            <td><p>".$text->prof."</p></td>
+            <td><p>".$text->review."</p></td>
+            <td><a href='/wp-admin/admin.php?page=reviews&del=$text->id'>Удалить</a></td>
+        </tr>";
+    }
+
+    $parser = new Parser();
+    $parser->parse(TM_DIR."/view/admin_review.php",array('texts'=>$generate,
+        'message'=>$message), true);
+}
+
+function review_slides_sc(){
+    global $wpdb;
+
+    $generate = "";
+    $texts = $wpdb->get_results("SELECT * FROM reviews");
+
+    for ($i=0; $i < count($texts); $i=$i+3) {
+        $generate .= "<li>"; 
+        
+            $generate .= "<div class='slider-item'>";
+                $generate .= "<div class='userIconCirc'><img src='".$texts[$i]->photo_url."'></div>
+                <h3>".$texts[$i]->name."</h3>
+                <p>".$texts[$i]->prof."</p>
+                <div class='indexComent'><p>".$texts[$i]->review."</p></div>";
+            $generate .= "</div>";
+
+            if(isset($texts[$i+1])){
+                $generate .= "<div class='slider-item'>";
+                    $generate .= "<div class='userIconCirc'><img src='".$texts[$i+1]->photo_url."'></div>
+                    <h3>".$texts[$i+1]->name."</h3>
+                    <p>".$texts[$i+1]->prof."</p>
+                    <div class='indexComent'><p>".$texts[$i+1]->review."</p></div>";
+                $generate .= "</div>";
+            }
+
+            if(isset($texts[$i+2])){
+                $generate .= "<div class='slider-item'>";
+                    $generate .= "<div class='userIconCirc'><img src='".$texts[$i+2]->photo_url."'></div>
+                    <h3>".$texts[$i+2]->name."</h3>
+                    <p>".$texts[$i+2]->prof."</p>
+                    <div class='indexComent'><p>".$texts[$i+2]->review."</p></div>";
+                $generate .= "</div>";
+            }
+        
+        $generate .= "</li>";
+    }
+    return $generate;
+}
+
+add_shortcode('review', 'review_slides_sc');
 
 
 
