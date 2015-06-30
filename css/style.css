@@ -109,7 +109,20 @@ html {
     -o-background-size: cover;
 }
 
-.intro .intro-body {
+.introNews {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    text-align: center;
+    background: url(../img/newsBg.jpg) no-repeat top center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro .intro-body, .introNews .intro-body {
     display: table-cell;
     vertical-align: middle;
 }
@@ -118,16 +131,16 @@ html {
 
 
 @media(min-width:768px) {
-    .intro {
+    .intro, .introNews {
         height: 100%;
         padding: 0;
     }
 
-    .intro .intro-body .brand-heading {
+    .intro .intro-body .brand-heading, .introNews .intro-body .brand-heading {
         font-size: 100px;
     }
 
-    .intro .intro-body .intro-text {
+    .intro .intro-body .intro-text, .introNews .intro-body .intro-text {
         font-size: 26px;
     }
 }

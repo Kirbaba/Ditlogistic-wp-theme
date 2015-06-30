@@ -143,7 +143,7 @@ h1
       color: #000000
       outline: none
 
-.intro h1
+.intro h1, .introNews h1
   color: #131313 // text color
   font-family: Calibri
   font-size: 57px
@@ -168,7 +168,7 @@ h1
   padding-top: 10px
   margin-bottom: 0
 
-.intro
+.intro, .introNews
   position: relative
   .navigBot
     position: absolute
@@ -523,6 +523,10 @@ footer
         font-weight: bold
       a:hover
         color: #41b8df
+      a:focus
+        outline: none
+        text-decoration: none
+
 
 .footLogo
   background-image: url(../img/DITLOGISTIC.png)
@@ -615,3 +619,9 @@ a#cont
   padding: 20px 15px
   margin: 15px 0
 
+.introNews
+  h1
+    text-align: center
+    span
+      text-align: center
+      text-transform: uppercase

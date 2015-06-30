@@ -128,17 +128,17 @@ h1 {
       color: #000000;
       outline: none; }
 
-.intro h1 {
+.intro h1, .introNews h1 {
   color: #131313;
   font-family: Calibri;
   font-size: 57px;
   text-align: left;
   font-weight: 300; }
-  .intro h1 span {
+  .intro h1 span, .introNews h1 span {
     background: rgba(255, 255, 255, 0.75);
     font-family: Calibri;
     padding: 0 20px; }
-    .intro h1 span .changed {
+    .intro h1 span .changed, .introNews h1 span .changed {
       color: #00c2f0;
       background: rgba(255, 255, 255, 0); }
 
@@ -151,9 +151,9 @@ h1 {
   padding-top: 10px;
   margin-bottom: 0; }
 
-.intro {
+.intro, .introNews {
   position: relative; }
-  .intro .navigBot {
+  .intro .navigBot, .introNews .navigBot {
     position: absolute;
     z-index: 140;
     bottom: 0;
@@ -163,7 +163,7 @@ h1 {
     height: 50px;
     border-top: 2px solid #ffffff;
     padding-top: 10px; }
-    .intro .navigBot .main_m {
+    .intro .navigBot .main_m, .introNews .navigBot .main_m {
       margin: 0 auto; }
 
 .logo i {
@@ -495,6 +495,9 @@ footer {
         font-weight: bold; }
       footer .footMenu li a:hover {
         color: #41b8df; }
+      footer .footMenu li a:focus {
+        outline: none;
+        text-decoration: none; }
 
 .footLogo {
   background-image: url(../img/DITLOGISTIC.png);
@@ -585,5 +588,11 @@ a#cont {
   color: #adadad;
   padding: 20px 15px;
   margin: 15px 0; }
+
+.introNews h1 {
+  text-align: center; }
+  .introNews h1 span {
+    text-align: center;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */
