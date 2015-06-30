@@ -41,9 +41,7 @@
 </header>
 <a name="serv" id="serv"></a>
 <section class="Line2">
-
     <div class="container">
-
         <h1 class="blockTitle">Наши услуги</h1>
         <div class="underH"></div>
         <p>Мы перевозим разнообразную технику</p>
@@ -52,7 +50,6 @@
                 <div class="servAuto">
                     <a href="#"><h2>ПЕРЕВОЗКА СПЕЦТЕХНИКИ  И ТРАНСПОРТНЫХСРЕДСТВ</h2></a>
                 </div>
-
             </div>
             <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
                 <div class="servJD">
@@ -75,7 +72,6 @@
         <div class="row">
             <a href="#whatWeDo" class="toGallery">Перейти в галерею</a>
         </div>
-
     </div>
 </section>
 
@@ -114,15 +110,57 @@
             </div>
         </div>
     </div>
-
 </section>
 
 <section class="Line4">
     <div class="container">
         <div class="for-slider">
+<<<<<<< HEAD
             <div class="fotorama" data-width="100%"  data-ratio="31/9" data-autoplay="true" data-loop="true" data-arrows="true" data-autoplay="true">
                     <?php echo do_shortcode('[text]');?>
             </div>
+=======
+               <!--  <div class="fotorama" data-width="100%"  data-ratio="31/9" data-autoplay="true" data-loop="true" data-arrows="true" data-autoplay="true">
+                        <?php echo do_shortcode('[text]');?>
+                </div> -->
+
+                <div class="col-lg-12 col-xs-10 slider_text">
+                    <a href="#" class="unslider-arrow prev">1</a>
+                        <div class="banner text">
+                            <ul>
+                                <?php echo do_shortcode('[text]');?>
+                            </ul>
+                        </div>
+                    <a href="#" class="unslider-arrow next">2</a>
+                </div>
+
+                <div class="col-lg-12 col-xs-10 slider_review">
+                    <a href="#" class="unslider-arrow-1 prev">1</a>
+                     <div class="banner review">
+                            <ul>
+                                <?php echo do_shortcode('[review]');?>
+                            </ul>
+                        </div>
+                     <a href="#" class="unslider-arrow-1 next">2</a>
+                </div>
+               <!--  <div class="fotorama" data-width="100%"  data-ratio="31/9" data-autoplay="true" data-loop="true" data-arrows="true" data-autoplay="true">
+                        <?php echo do_shortcode('[review]');?>
+                </div>   -->
+    
+<!--            <div class="userIconCirc">-->
+<!--                <img src="--><?php //bloginfo('template_directory'); ?><!--/img/Layer-27.png" alt=""/>-->
+<!--            </div>-->
+<!--            <h3>Клавдия Коршунова</h3>-->
+<!--            <p>Исполнительный Директор ООО “Газпром”</p>-->
+<!---->
+<!--            <div class="indexComent">-->
+<!--                <p>-->
+<!--                    Реализация в обществе - Сферы деятельности Клавдии разнообразны. Она очень дисциплинирована.-->
+<!--                    Прежде всего это хранительница домашнего очага и чудесная мать семейства.-->
+<!--                    Может часто менять места работы и трудиться медсестрой, санитаркой, педиатром, стюардессой.-->
+<!--                </p>-->
+<!--            </div>-->
+>>>>>>> 43c5861bc133a5dcbe824e067266be51b6a2a1eb
         </div>
     </div>
 </section>
