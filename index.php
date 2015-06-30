@@ -120,7 +120,7 @@
 <section class="Line4">
     <div class="container">
         <div class="for-slider">
-                <div class="fotorama" data-width="100%"  data-ratio="31/9" data-autoplay="true" data-loop="true" data-arrows="true">
+                <div class="fotorama" data-width="100%"  data-ratio="31/9" data-autoplay="true" data-loop="true" data-arrows="true" data-autoplay="true">
                         <?php echo do_shortcode('[text]');?>
                 </div>
 <!--            <div class="userIconCirc">-->
