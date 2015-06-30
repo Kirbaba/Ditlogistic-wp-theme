@@ -133,5 +133,9 @@ function my_pagenavi() {
 
 add_shortcode('text', 'text_slides_sc');
 
+function excerpt_readmore($more) {
+    return '... <br><a href="'. get_permalink($post->ID) . '" class="readmore">' . 'Читать далее' . '</a>';
+}
 
+add_filter('excerpt_more', 'excerpt_readmore');
 

@@ -120,22 +120,9 @@
 <section class="Line4">
     <div class="container">
         <div class="for-slider">
-                <div class="fotorama" data-width="100%"  data-ratio="31/9" data-autoplay="true" data-loop="true" data-arrows="true" data-autoplay="true">
-                        <?php echo do_shortcode('[text]');?>
-                </div>
-<!--            <div class="userIconCirc">-->
-<!--                <img src="--><?php //bloginfo('template_directory'); ?><!--/img/Layer-27.png" alt=""/>-->
-<!--            </div>-->
-<!--            <h3>Клавдия Коршунова</h3>-->
-<!--            <p>Исполнительный Директор ООО “Газпром”</p>-->
-<!---->
-<!--            <div class="indexComent">-->
-<!--                <p>-->
-<!--                    Реализация в обществе - Сферы деятельности Клавдии разнообразны. Она очень дисциплинирована.-->
-<!--                    Прежде всего это хранительница домашнего очага и чудесная мать семейства.-->
-<!--                    Может часто менять места работы и трудиться медсестрой, санитаркой, педиатром, стюардессой.-->
-<!--                </p>-->
-<!--            </div>-->
+            <div class="fotorama" data-width="100%"  data-ratio="31/9" data-autoplay="true" data-loop="true" data-arrows="true" data-autoplay="true">
+                    <?php echo do_shortcode('[text]');?>
+            </div>
         </div>
     </div>
 </section>
